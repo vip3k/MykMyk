@@ -24,11 +24,7 @@ public class Party {
 
         boolean isVegan;
 
-        if (isVeganString.equals("Y")) {
-            isVegan = true;
-        } else {
-            isVegan = false;
-        }
+        isVegan = isVeganString.equals("Y");
 
         Guest guest = new Guest(name, meal, phoneNumber, isVegan);
 
